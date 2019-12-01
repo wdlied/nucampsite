@@ -29,7 +29,8 @@
 					<h2>a better way to camp</h2>
 				</div>
 				<div class="col-md-4 col-xl-2">
-					<a role="button" class="btn btn-lg btn-info mt-4" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+					<a role="button" class="btn btn-lg btn-info mt-4" data-toggle="modal"
+						data-target="#reserveModal">Reserve Campsite</a>
 				</div>
 			</div>
 		</div>
@@ -281,18 +282,19 @@
 									</div>
 								</div>
 								<div class="row form-group">
-										<label for="campsiteType" class="col-sm-6 col-form-label">Campsite Type</label>
-										<div class="col">
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-success active">
-														<input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
-													</label>
-													<label class="btn btn-primary">
-														<input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
-													</label>
-												</div>
+									<label for="campsiteType" class="col-sm-6 col-form-label">Campsite Type</label>
+									<div class="col">
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-success active">
+												<input type="radio" name="siteType" id="siteTent" autocomplete="off"
+													checked> Tent
+											</label>
+											<label class="btn btn-primary">
+												<input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+											</label>
 										</div>
 									</div>
+								</div>
 								<div class="row form-group">
 									<div class="col">
 										<button type="cancel" class="btn btn-secondary" data-dismiss="modal">
@@ -316,24 +318,7 @@
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-	<script>
-		$(function() {
-			$(".carousel").carousel( { interval: 2000 } );
-			$("#carouselButton").click(function(){
-				if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-					$(".carousel").carousel("pause");
-					$("#carouselButton").children("i").removeClass("fa-pause");
-					$("#carouselButton").children("i").addClass("fa-play");
-				} else {
-					$(".carousel").carousel("cycle");
-					$("#carouselButton").children("i").removeClass("fa-play");
-					$("#carouselButton").children("i").addClass("fa-pause");
-				}
-				
-			});
-		});
-	</script>
-
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
